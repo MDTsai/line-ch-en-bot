@@ -1,0 +1,29 @@
+{
+  "name": "line-ch-en-bot",
+  "version": "1.0.0",
+  "description": "A LINE Bot uses Google Translate to convert Chinese to English",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/MDTsai/line-ch-en-bot.git"
+  },
+  "keywords": [
+    "node.js",
+    "LINE"
+  ],
+  "author": "Eric Tsai",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/MDTsai/line-ch-en-bot/issues"
+  },
+  "homepage": "https://github.com/MDTsai/line-ch-en-bot#readme",
+  "dependencies": {
+    "@line/bot-sdk": "^5.0.1",
+    "express": "^4.16.2",
+    "google-translate": "^2.0.5",
+    "google-translate-api": "^2.3.0"
+  }
+}
