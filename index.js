@@ -33,8 +33,10 @@ function handleEvent(event) {
   }
 
   translate(event.message.text, {to: 'en'}).then(res => {
-    const translated = { type: 'text', text: res.text };
-    return client.replyMessage(event.replyToken, translated);
+    if (res.text != event.message.text) {
+      const translated = { type: 'text', text: res.text };
+      return client.replyMessage(event.replyToken, translated);
+    }
   }).catch(err => {
     console.error(err);
   });
